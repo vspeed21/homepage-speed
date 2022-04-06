@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed - Home</title>
+  <link rel="shortcut icon" href="img/devchallenges.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="css/app.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="header contenedor">
+    <h1 class="header__nombre">speed</h1>
+
+    <nav class="navegacion">
+      <button class="navegacion__btn" id="navegacion__btn-toggle">
+        <i class="fas fa-bars navegacion__btn-icon"></i>
+      </button>
+      <ul class="navegacion__menu" id="navegacion__menu-toggle">
+        <li class="navegacion__menu-item">
+          <a href="#" class="navegacion__menu-link navegacion__menu-link--active">home</a>
+        </li>
+        <li class="navegacion__menu-item">
+          <a href="#" class="navegacion__menu-link navegacion__active">services</a>
+        </li>
+        <li class="navegacion__menu-item">
+          <a href="#" class="navegacion__menu-link navegacion__active">our works</a>
+        </li>
+        <li class="navegacion__menu-item">
+          <a href="#" class="navegacion__menu-link navegacion__active">clients</a>
+        </li>
+        <li class="navegacion__menu-item">
+          <a href="#" class="navegacion__menu-link navegacion__active">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="create contenedor">
+    <div class="create__contenedor-tiulos">
+      <h3 class="create__subtitulo">Unhappy with your website?</h3>
+    <h1 class="create__titulo">We create beatiful and fast web services</h1>
+    </div>
+
+    <div class="create__hero">
+      <img src="img/heroImage.jpg" alt="hero" class="create__imagen">
+    </div>
+
+
+    <div class="contact">
+      <h2 class="contact__titulo">Story, emotion and purpose</h2>
+
+      <p class="contact__texto">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+
+      <form class="contact__formulario">
+        <label for="email" class="contact__label">Want us to contact you?</label>
+        <div class="contact__inputs">
+          <input type="email" id="email" class="contact__input" placeholder="Email">
+        <button type="submit" class="contact__button">Join</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <main class="services contenedor">
+    <h2 class="services__titulo">We offer high demand services</h2>
+
+    <div class="services__grid">
+      <div class="services__UIUX">
+        <div class="services__contenido">
+          <span class="material-icons services__nombre-pencil">edit</span>
+          <h3 class="services__nombre">UI/UX Design</h3>
+          <p class="services__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <a href="#" class="services__link">Get started</a>
+        </div>
+      </div>
+
+      <div class="services__frontend">
+        <div class="services__contenido">
+          <span class="material-icons services__nombre-pencil services__nombre-pencil--verde">code</span>
+          <h3 class="services__nombre">front end</h3>
+          <p class="services__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <a href="#" class="services__link">Get started</a>
+        </div>
+      </div>
+
+      <div class="services__backend">
+        <div class="services__contenido">
+          <span class="material-icons services__nombre-pencil services__nombre-pencil--rojo">laptop</span>
+          <h3 class="services__nombre">back end</h3>
+          <p class="services__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <a href="#" class="services__link">Get started</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="https://kit.fontawesome.com/f992f290d3.js" crossorigin="anonymous"></script>
+</body>
+</html>
