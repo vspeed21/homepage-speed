@@ -351,15 +351,19 @@ img{
   .services__UIUX:hover,
   .services__frontend:hover,
   .services__backend:hover{
-    animation-name: moverTexto;
-    animation-duration: 1s;
+    overflow: hidden;
+}
+
+.services__contenido:hover{
+  animation-name: moverTexto;
+  animation-duration: 1s;
 }
 }
 
 @keyframes moverTexto {
   0%{
     opacity: 0;
-    transform: translate(-10rem);
+    transform: translate(-20rem);
   }
   100%{
     opacity: 1;
@@ -424,8 +428,305 @@ img{
   background-color: var(--bgButtonHover);
 }
 
+/* Design */
+.design{
+  margin-top: 10rem;
+}
 
+@media (min-width: 768px) {
+  .design__contenedor-position{
+    position: relative;
+  }
 
+  .design__onboard{
+    position: absolute;
+    right: 0;
+    bottom: 15rem;
+  }
+}
+
+.design__titulo{
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--gray-1);
+  max-width: 30rem;
+}
+
+@media (min-width: 768px) {
+  .design__titulo{
+    font-size: 3.4rem;
+    max-width: 40rem;
+  }
+}
+
+.design__grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .design__grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.desing__imagen{
+  width: 53.4rem;
+  max-height: 53.4rem;
+  border-radius: 1.2rem;
+}
+
+.design__area{
+  font-weight: 300;
+  color: #828282;
+  font-size: 1.4rem;
+  margin-block: 1rem;
+}
+
+.design__nombre{
+  font-size: 1.8rem;
+  color: var(--gray-1);
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .design__nombre{
+    margin-bottom: 10rem;
+  }
+}
+
+.design__link{
+  display: block;
+  color: var(--bgButton);
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .design__link{
+    text-align: right;
+    margin-top: -10rem;
+    cursor: pointer;
+  }
+}
+
+/* Team */
+.team{
+  margin-top: 6rem;
+}
+
+.team__grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.team__presentation{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--orange);
+  margin-bottom: 1.5rem;
+}
+
+.team__titulo{
+  font-size: 3.6rem;
+  font-weight: 500;
+  max-width: 30rem;
+}
+
+@media (min-width: 768px) {
+  .team__titulo{
+    max-width: 40rem;
+  }
+}
+
+.team__subpresentation{
+  font-size: 1.6rem;
+  color: var(--gray-2);
+  font-weight: 500;
+  max-width: 30rem;
+  line-height: 1.8;
+}
+
+.team__flex{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+.team__imagenes{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  position: relative;
+}
+
+.team__imagen--person3{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 2.5rem;
+}
+
+@media (min-width: 600px) {
+  .team__imagen--person3{
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .team__imagen--person3{
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .team__imagen--person3{
+    width: 23rem;
+    height: 23rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__imagen--person3{
+    width: 27rem;
+    height: 27rem;
+    left: -1rem;
+  }
+}
+
+.team__imagen{
+  border-radius: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  .team__imagen{
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .team__grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Testimoneales */
+.testimoneales{
+  margin-top: 6rem;
+}
+
+.testimoneales__testimoneal{
+  font-size: 2.4rem;
+  color: var(--gray-1);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .testimoneales__testimoneal{
+    max-width: 65rem;
+  }
+}
+
+.header__flex{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.header__imagen{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1.2rem;
+}
+
+.header__usuario{
+  font-size: 2.4rem;
+  color: var(--gray-2);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.header__company{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gray-3);
+  margin-top: 1rem;
+}
+
+/* Footer */
+.footer{
+  background-color: var(--bgfooter);
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  .footer{
+    height: 35rem;
+  }
+}
+
+.footer__grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer__nav{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__enlace{
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.footer__nombre{
+  font-family: var(--fuenteSecundario);
+  font-size: 3.6rem;
+  color: #fff;
+  text-transform: capitalize;
+  margin-block: 1.5rem;
+}
+
+.footer__iconos{
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__imagen-icon{
+  cursor: pointer;
+}
+
+.footer__copyright{
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  color: #f2f2f2;
+  margin-top: 6rem;
+}
+
+.footer__bold{
+  font-weight: bold;
+}
 
 /* Class for JS */
 .error{
@@ -456,4 +757,11 @@ img{
   text-align: center;
   padding: 1rem;
   max-width: 20rem;
+}
+
+
+@media (min-width: 768px) {
+  .exito{
+    margin: 0 0 2rem 9rem;
+  }
 }
