@@ -27,6 +27,12 @@ body{
   font-weight: 500;
 }
 
+@media (min-width: 768px) {
+  body.body-scroll{
+    padding-top: 6rem;
+  }
+}
+
 a{text-decoration: none;}
 
 ul{
@@ -53,9 +59,9 @@ img{
 
 /* Header */
 .header{
-  background-color: #fff;
   margin-top: 2rem;
   height: 6rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -763,5 +769,21 @@ img{
 @media (min-width: 768px) {
   .exito{
     margin: 0 0 2rem 9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__fijo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    height: 8rem;
+    z-index: 100;
+    padding: 0 2rem;
+    box-shadow: .1rem .2rem .3rem #666;
+    transition: all .3s;
   }
 }
