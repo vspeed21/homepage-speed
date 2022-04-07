@@ -423,3 +423,37 @@ img{
 .services__link:hover{
   background-color: var(--bgButtonHover);
 }
+
+
+
+
+/* Class for JS */
+.error{
+  background-color: rgb(235, 40, 40);
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto 2rem auto;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+  max-width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .error{
+    margin: 0 0 2rem 9rem;
+  }
+}
+
+.exito{
+  background-color: rgb(20, 184, 20);
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto 2rem auto;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+  max-width: 20rem;
+}
